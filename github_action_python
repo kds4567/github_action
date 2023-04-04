@@ -9,7 +9,7 @@ outputs:
   num_squared:
     description: 'square of the input'
     value:${{steps.get-squre.outputs.num_squared}}
-rus: 
+runs: 
   using: 'composite'
   steps:
     name: Install Python
