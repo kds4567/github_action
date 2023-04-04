@@ -8,7 +8,7 @@ inputs:
 outputs:
   num_squared:
     description: 'square of the input'
-    value:${{steps.get-squre.outputs.num_squared}}
+    value: ${{steps.get-square.outputs.num_squared}}
 runs: 
   using: 'composite'
   steps:
@@ -16,7 +16,7 @@ runs:
     uses: actions/setup-python@v4
     with:
       python-version:'3.10'
-    name:Install Dependencies
+    name: Install Dependencies
     run: pip install -r requirments.txt
     shell:bash
     name: Pass Inputs to shell
