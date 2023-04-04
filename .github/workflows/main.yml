@@ -3,8 +3,8 @@ description: 'A github action that takes an input and returns the square of the 
 inputs:
   num:
     description: 'Enter a number'
-  required: true
-    default:"1"
+    required: true
+    default: "1"
 outputs:
   num_squared:
     description: 'square of the input'
